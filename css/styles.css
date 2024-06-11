@@ -1,5 +1,22 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style-position: inside;
+}
+
 body {
     font-family: Arial, Verdana, sans-serif;
+    background-color: antiquewhite;
 }
 
 .title {
@@ -7,28 +24,48 @@ body {
     color: rgb(46, 46, 46);
     letter-spacing: 0.05em;
     text-align: center;
+    padding: 10px;
+    margin: 5px;
 }
 
-.list {
+.list-container {
+    text-align: center;
+    margin: 5px;
+}
+
+.list,
+.list-title {
     font-size: 18px;
     font-style: italic;
     font-variant: small-caps;
 }
 
+.list {
+    margin: 0 20px;
+}
+
+.list-title {
+    display: inline-block;
+    text-align: left;
+}   
+
 .subtitle {
     font-size: 22px;
     font-weight: 600;
     text-decoration: underline dotted rgb(80, 80, 80);
+    margin: 0 20px;
 }
 
 .description {
     color: black;
     text-indent: 15px;
+    margin: 0 20px;
 }
 
 .steps {
     font-family: 'Times New Roman',  Garamond, serif;
     font-size: 110%;
+    margin: 0 20px;
 }
 
 .pic {
